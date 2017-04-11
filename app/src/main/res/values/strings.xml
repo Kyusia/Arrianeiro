@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Arrianeiro</string>
+    <string name="dot">.</string>
+    <string name="duration">przez</string>
+    <string name="questionWhat">What?</string>
+    <string name="questionHowLong">How long?</string>
+    <string name="Duration">by</string>
+    <string name="Question1">1. Rejestratory dźwięku są odporne na:</string>
+    <string name="titleofquiz">Deck Equipment</string>
+    <string name="Answer111">Ogień wysokiej intensywności</string>
+    <string name="Answer112">30 min</string>
+    <string name="A2">Ogień niskiej intensywności</string>
+    <string name="A1">Ogień wysokiej intensywności</string>
+    <string name="A3">Paliwo</string>
+    <string name="A4">Woda morska</string>
+    <string name="A5">4400 jednostek przeciążenia</string>
+    <string name="A6">5000lb ciężaru</string>
+    <string name="A7">Ciśnienie</string>
+    <string name="Ad1">30 min</string>
+    <string name="Ad2">10 h</string>
+    <string name="Ad3">24 h</string>
+    <string name="Ad4">30 dni</string>
+    <string name="Ad5">6,5 ms</string>
+    <string name="Ad6">5min</string>
+    <string name="Ad7">6 km p.p.m</string>
+    <string name="Date1">The change of used frequencies </string>
+    <string name="Date2">The Poland\'s accession</string>
+    <string name="Date3">The creation </string>
+    <string name="question5">5. Rejestrator dzwiekowy jest <i><b>najdłuzej</b></i> odporny na [dni, h, min, ms]:</string>
+    <string name="hint">ex. Emergency Locator Transmitter</string>
+    <string name="submit">GOTOWE!</string>
+    <string name="first_question">1. Systemy namiarowo-odległosciowe to:</string>
+    <string name="second_question">2. Dopasuj daty do wydarzen zwiazanych  z programem COSPAS/SARSAT</string>
+    <string name="date_1"><b>1982</b></string>
+    <string name="date_2"><b>2009</b></string>
+    <string name="date_3"><b>2004</b></string>
+    <string name="third_question">3. Rozwin skróty</string>
+    <string name="acronym_1">LUT</string>
+    <string name="acronym_2">ULB</string>
+    <string name="acronym_3">EHF</string>
+    <string name="acronym_4">LORAN-C</string>
+    <string name="fourth_question">4. Czestotliwosc uzywana do transmitowania sygnału przez ELT:</string>
+    <string name="frequency_1">121.500 MHz</string>
+    <string name="frequency_2">406.025 MHz</string>
+    <string name="frequency_3">243.000 MHz</string>
+    <string name="final_statement" />
+    <string name="description_of_quiz">Sprawdź swoją wiedzę z wyposażenia pokładowego! Maksymalnie możesz zdobyć 16 punktów. Powodzenia!</string>
+    <string name="title_of_quiz">Deck Equipment</string>
+    <string name="navigation_system_1"><b>VOR/DME</b></string>
+    <string name="navigation_system_2"><b>ARK</b></string>
+    <string name="navigation_system_3"><b>TACAN</b></string>
+    <string-array name="planets_array">
+    <item>@string/A1</item>
+    <item>@string/A2</item>
+    <item>@string/A3</item>
+    <item>@string/A4</item>
+    <item>@string/A5</item>
+    <item>@string/A6</item>
+    <item>@string/A7</item>
+</string-array>
+    <string-array name="third_question">
+        <item>@string/Date1</item>
+        <item>@string/Date2</item>
+        <item>@string/Date3</item>
+    </string-array>
+
+</resources>
