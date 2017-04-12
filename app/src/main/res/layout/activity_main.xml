@@ -361,12 +361,16 @@
                         style="@style/AnswersWithBgr"
                         android:id="@+id/button"
                         android:onClick="submit"
+                        android:layout_marginBottom="12dp"
                         android:text="@string/submit" />
 
                     <TextView
-                        style="@style/Answers"
+                        style="@style/TableLayout"
                         android:id="@+id/Ans"
-                        android:text="@string/final_statement" />
+                        android:padding="12dp"
+                        android:text="@string/final_statement"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
         </LinearLayout>
 
     </LinearLayout>
