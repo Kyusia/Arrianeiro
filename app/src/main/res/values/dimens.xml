@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_of_answers">12sp</dimen>
+    <dimen name="size_of_hints">14sp</dimen>
+    <dimen name="size_of_questions">16sp</dimen>
+</resources>

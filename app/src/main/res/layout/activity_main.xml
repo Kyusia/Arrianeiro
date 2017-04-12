@@ -20,7 +20,8 @@
             android:layout_height="130dp"
             android:cropToPadding="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/main_pic" />
+            android:src="@drawable/main_pic"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/title"
@@ -73,6 +74,7 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
                     android:weightSum="1">
 
                     <CheckBox
@@ -82,7 +84,7 @@
                         android:layout_weight="0.33"
                         android:textColor="@color/additions"
                         android:text="@string/navigation_system_1"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_of_answers" />
 
                     <CheckBox
                         android:id="@+id/checkBox2"
@@ -91,8 +93,7 @@
                         android:layout_weight="0.33"
                         android:textColor="@color/additions"
                         android:text="@string/navigation_system_2"
-                        android:layout_marginBottom="12dp"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_of_answers" />
 
                     <CheckBox
                         android:id="@+id/checkBox3"
@@ -101,7 +102,7 @@
                         android:textColor="@color/additions"
                         android:layout_weight="0.33"
                         android:text="@string/navigation_system_3"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_of_answers" />
 
                 </TableRow>
             </TableLayout>
@@ -134,6 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/size_of_answers"
                         android:text="@string/date_1"
                         android:textColor="@color/additions"
                         android:layout_weight="0"/>
@@ -149,7 +151,6 @@
                 <TableRow
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-
                     android:layout_marginTop="6dp"
                     android:weightSum="1">
 
@@ -158,6 +159,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/additions"
+                        android:textSize="@dimen/size_of_answers"
                         android:layout_gravity="center_horizontal"
                         android:text="@string/date_2"
                         android:layout_weight="0"
@@ -183,6 +185,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/date_3"
+                        android:textSize="@dimen/size_of_answers"
                         android:layout_gravity="center_horizontal"
                         android:textColor="@color/additions"
                         android:layout_weight="0" />
@@ -229,6 +232,7 @@
                         android:background="@color/plain2"
                         android:textColor="@color/additions"
                         android:gravity="center"
+                        android:textSize="@dimen/size_of_answers"
                         android:text="@string/acronym_1" />
 
                     <EditText
@@ -240,7 +244,7 @@
                         android:layout_marginLeft="12dp"
                         android:hint="@string/hint"
                         android:textColorHint="@color/main_hint"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/size_of_hints"
                         android:inputType="textPersonName" />
                 </TableRow>
                 <TableRow
@@ -257,6 +261,7 @@
                         android:textColor="@color/additions"
                         android:background="@color/plain2"
                         android:gravity="center"
+                        android:textSize="@dimen/size_of_answers"
                         android:text="@string/acronym_2" />
 
                     <EditText
@@ -269,7 +274,7 @@
                         android:inputType="textPersonName"
                         android:textColor="@color/main"
                         android:textColorHint="@color/main_hint"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/size_of_hints" />
                 </TableRow>
                 <TableRow
                     android:layout_width="wrap_content"
@@ -285,6 +290,7 @@
                         android:textColor="@color/additions"
                         android:background="@color/plain2"
                         android:gravity="center"
+                        android:textSize="@dimen/size_of_answers"
                         android:text="@string/acronym_3" />
 
                     <EditText
@@ -294,7 +300,7 @@
                         android:layout_weight="1"
                         android:textColor="@color/main"
                         android:layout_marginLeft="12dp"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/size_of_hints"
                         android:textColorHint="@color/main_hint"
                         android:hint="@string/hint"
                         android:inputType="textPersonName" />
@@ -312,6 +318,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="0"
                         android:textColor="@color/additions"
+                        android:textSize="@dimen/size_of_answers"
                         android:background="@color/plain2"
                         android:layout_gravity="center_vertical"
                         android:gravity="center"
@@ -323,7 +330,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_marginLeft="12dp"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/size_of_hints"
                         android:textColor="@color/main"
                         android:textColorHint="@color/main_hint"
                         android:hint="@string/hint"
@@ -341,7 +348,7 @@
                 tools:layout_editor_absoluteX="8dp">
                 <TextView
                     android:padding="10dp"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_of_questions"
                     android:layout_marginTop="6dp"
                     android:textColor="@color/plain"
                     android:text="@string/fourth_question"
@@ -349,15 +356,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="12dp"
-                    android:weightSum="3">
 
                     <RadioGroup
                         android:id="@+id/btnGroup"
                         android:paddingLeft="10dp"
+                        android:layout_marginBottom="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" >
 
@@ -366,6 +369,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="@dimen/size_of_answers"
                             android:text="@string/frequency_1"
                             android:textColor="@color/main"
                              />
@@ -375,6 +379,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/main"
+                            android:textSize="@dimen/size_of_answers"
                             android:layout_weight="1"
                             android:text="@string/frequency_2"
                              />
@@ -384,12 +389,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/main"
+                            android:textSize="@dimen/size_of_answers"
                             android:layout_weight="1"
                             android:text="@string/frequency_3"
                              />
                     </RadioGroup>
 
-                </TableRow>
 </TableLayout>
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
@@ -409,7 +414,7 @@
                 android:text="@string/question5"
                 android:fontFamily="casual"
                 android:textColor="@color/plain"
-                android:textSize="16sp" />
+                android:textSize="@dimen/size_of_questions" />
 
 
 
@@ -431,6 +436,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textColor="@color/main"
+                        android:textSize="@dimen/size_of_answers"
                         android:text="@string/duration" />
 
                     <EditText
@@ -438,8 +444,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/main"
+                        android:textSize="@dimen/size_of_hints"
                         android:textColorHint="@color/main_hint"
                         android:layout_weight="1"
+                        android:inputType="text"
                         android:hint=""/>
                 </TableRow>
 
@@ -460,6 +468,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/main"
                         android:layout_gravity="center"
+                        android:textSize="@dimen/size_of_answers"
                         android:layout_height="wrap_content"
                         android:text="@string/duration" />
 
@@ -467,8 +476,11 @@
                         android:id="@+id/editText5"
                         android:layout_width="match_parent"
                         android:textColor="@color/main"
+                        android:textSize="@dimen/size_of_hints"
+                        android:inputType="text"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        tools:ignore="LabelFor" />
                 </TableRow>
 
                 <TableRow
@@ -487,6 +499,7 @@
                         android:id="@+id/textView1_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_of_answers"
                         android:layout_gravity="center"
                         android:textColor="@color/main"
                         android:text="@string/duration" />
@@ -496,7 +509,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/main"
-                        android:layout_weight="1" />
+                        android:textSize="@dimen/size_of_hints"
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        tools:ignore="LabelFor" />
                 </TableRow>
 
                 <TableRow
@@ -515,6 +531,7 @@
                         android:id="@+id/textView1_4"
                         android:layout_width="wrap_content"
                         android:textColor="@color/main"
+                        android:textSize="@dimen/size_of_answers"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/duration" />
@@ -522,9 +539,12 @@
                     <EditText
                         android:id="@+id/editText7"
                         android:layout_width="match_parent"
+                        android:textSize="@dimen/size_of_answers"
                         android:textColor="@color/main"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        tools:ignore="LabelFor" />
                 </TableRow>
 
                 <TableRow
@@ -543,6 +563,7 @@
                         android:id="@+id/textView1_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_of_answers"
                         android:textColor="@color/main"
                         android:layout_gravity="center"
                         android:text="@string/duration" />
@@ -551,8 +572,11 @@
                         android:id="@+id/editText8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_of_hints"
                         android:textColor="@color/main"
-                        android:layout_weight="1" />
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        tools:ignore="LabelFor" />
                 </TableRow>
 
                 <TableRow
@@ -573,6 +597,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textSize="@dimen/size_of_answers"
                         android:text="@string/duration"
                         android:textColor="@color/main" />
 
@@ -580,8 +605,11 @@
                         android:id="@+id/editText9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_of_hints"
                         android:layout_weight="1"
-                        android:textColor="@color/main" />
+                        android:textColor="@color/main"
+                        android:inputType="text"
+                        tools:ignore="LabelFor" />
                 </TableRow>
             </TableLayout>
 
@@ -593,6 +621,7 @@
                         android:textColorHint="@color/plain"
                         android:background="@color/plain2"
                         android:textColor="@color/additions"
+                        android:textSize="@dimen/size_of_answers"
                         android:onClick="submit"
                         android:text="@string/submit" />
 
@@ -603,8 +632,9 @@
                         android:layout_marginTop="12dp"
                         android:paddingLeft="10dp"
                         android:paddingTop="10dp"
+                        android:textSize="@dimen/size_of_answers"
                         android:textColor="@color/main"
-                        android:layout_height="match_parent"
+                        android:layout_height="0dp"
                         android:background="@color/background2"
                         android:layout_weight="1"
                         android:text="@string/final_statement" />
