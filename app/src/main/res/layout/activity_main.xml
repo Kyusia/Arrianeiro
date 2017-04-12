@@ -63,82 +63,45 @@
                 android:background="@color/background2"
                 tools:layout_editor_absoluteX="8dp">
                 <TextView
+                    style="@style/Questions"
                     android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:fontFamily="casual"
-                    android:text="@string/first_question"
-                    android:textColor="@color/plain"
-                    android:textSize="16sp" />
+                    android:text="@string/first_question" />
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:weightSum="1">
+                    style="@style/TableRows"
+                    android:weightSum="3">
 
                     <CheckBox
+                        style="@style/Checkboxes"
                         android:id="@+id/checkBox1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.33"
-                        android:textColor="@color/additions"
-                        android:text="@string/navigation_system_1"
-                        android:textSize="@dimen/size_of_answers" />
+                        android:text="@string/navigation_system_1" />
 
                     <CheckBox
+                        style="@style/Checkboxes"
                         android:id="@+id/checkBox2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.33"
-                        android:textColor="@color/additions"
-                        android:text="@string/navigation_system_2"
-                        android:textSize="@dimen/size_of_answers" />
+                        android:text="@string/navigation_system_2" />
 
                     <CheckBox
+                        style="@style/Checkboxes"
                         android:id="@+id/checkBox3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textColor="@color/additions"
-                        android:layout_weight="0.33"
-                        android:text="@string/navigation_system_3"
-                        android:textSize="@dimen/size_of_answers" />
+                        android:text="@string/navigation_system_3" />
 
                 </TableRow>
             </TableLayout>
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*"
-                android:layout_marginBottom="12dp"
-                android:stretchColumns="*"
-                android:background="@color/background2"
-                tools:layout_editor_absoluteX="8dp">
+                style="@style/TableLayout">
                 <TextView
-                    android:padding="10dp"
-                    android:textSize="16sp"
-                    android:layout_marginTop="6dp"
-                    android:textColor="@color/plain"
-                    android:text="@string/second_question"
-                    android:fontFamily="casual"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    style="@style/Questions"
+                    android:text="@string/second_question" />
 
                 <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp"
+                    style="@style/TableRows"
+                    android:layout_marginTop="12dp"
                     android:weightSum="1">
 
                     <TextView
+                        style="@style/Answers"
                         android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:textSize="@dimen/size_of_answers"
-                        android:text="@string/date_1"
-                        android:textColor="@color/additions"
-                        android:layout_weight="0"/>
+                        android:text="@string/date_1"/>
 
                     <Spinner
                         android:id="@+id/spinner1"
@@ -149,20 +112,14 @@
 
                 </TableRow>
                 <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp"
+                    style="@style/TableRows"
                     android:weightSum="1">
 
                     <TextView
+                        style="@style/Answers"
                         android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/additions"
-                        android:textSize="@dimen/size_of_answers"
-                        android:layout_gravity="center_horizontal"
                         android:text="@string/date_2"
-                        android:layout_weight="0"
+
                         />
 
                     <Spinner
@@ -174,21 +131,13 @@
 
                 </TableRow>
                 <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="12dp"
+                    style="@style/TableRows"
                     android:weightSum="1">
 
                     <TextView
+                        style="@style/Answers"
                         android:id="@+id/textView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/date_3"
-                        android:textSize="@dimen/size_of_answers"
-                        android:layout_gravity="center_horizontal"
-                        android:textColor="@color/additions"
-                        android:layout_weight="0" />
+                        android:text="@string/date_3" />
 
                     <Spinner
                         android:id="@+id/spinner3"
@@ -199,444 +148,224 @@
                 </TableRow>
             </TableLayout>
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*"
-                android:stretchColumns="*"
-                android:paddingLeft="10dp"
-                android:background="@color/background2"
-                android:layout_marginBottom="12dp"
-                tools:layout_editor_absoluteX="8dp">
+                style="@style/TableLayout">
                 <TextView
-                    android:padding="10dp"
-                    android:textSize="16sp"
-                    android:layout_marginTop="6dp"
-                    android:textColor="@color/plain"
-                    android:text="@string/third_question"
-                    android:layout_width="match_parent"
-                    android:fontFamily="casual"
-                    android:layout_height="wrap_content" />
+                    style="@style/Questions"
+                    android:text="@string/third_question" />
 
 
                 <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp"
+                    style="@style/TableRows"
                     android:weightSum="1">
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0"
-                        android:background="@color/plain2"
-                        android:textColor="@color/additions"
-                        android:gravity="center"
-                        android:textSize="@dimen/size_of_answers"
+                        style="@style/AnswersWithBgr"
                         android:text="@string/acronym_1" />
 
                     <EditText
+                        style="@style/Acronyms"
                         android:id="@+id/localUserTerminal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:textColor="@color/main"
-                        android:layout_marginLeft="12dp"
-                        android:hint="@string/hint"
-                        android:textColorHint="@color/main_hint"
-                        android:textSize="@dimen/size_of_hints"
-                        android:inputType="textPersonName" />
+                        tools:ignore="LabelFor"/>
                 </TableRow>
                 <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp"
+                    style="@style/TableRows"
                     android:weightSum="1">
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0"
-                        android:textColor="@color/additions"
-                        android:background="@color/plain2"
-                        android:gravity="center"
-                        android:textSize="@dimen/size_of_answers"
+                        style="@style/AnswersWithBgr"
                         android:text="@string/acronym_2" />
 
                     <EditText
+                        style="@style/Acronyms"
                         android:id="@+id/underwaterLocatorBeacon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:hint="@string/hint"
-                        android:layout_marginLeft="12dp"
-                        android:inputType="textPersonName"
-                        android:textColor="@color/main"
-                        android:textColorHint="@color/main_hint"
-                        android:textSize="@dimen/size_of_hints" />
+                        tools:ignore="LabelFor" />
                 </TableRow>
                 <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp"
+                    style="@style/TableRows"
                     android:weightSum="1">
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0"
-                        android:textColor="@color/additions"
-                        android:background="@color/plain2"
-                        android:gravity="center"
-                        android:textSize="@dimen/size_of_answers"
+                        style="@style/AnswersWithBgr"
                         android:text="@string/acronym_3" />
 
                     <EditText
+                        style="@style/Acronyms"
                         android:id="@+id/extremlyHighFrequency"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:textColor="@color/main"
-                        android:layout_marginLeft="12dp"
-                        android:textSize="@dimen/size_of_hints"
-                        android:textColorHint="@color/main_hint"
-                        android:hint="@string/hint"
-                        android:inputType="textPersonName" />
+                        tools:ignore="LabelFor"/>
                 </TableRow>
                 <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="12dp"
+                    style="@style/TableRows"
                     android:weightSum="1">
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0"
-                        android:textColor="@color/additions"
-                        android:textSize="@dimen/size_of_answers"
-                        android:background="@color/plain2"
-                        android:layout_gravity="center_vertical"
-                        android:gravity="center"
+                        style="@style/AnswersWithBgr"
                         android:text="@string/acronym_4" />
 
                     <EditText
+                        style="@style/Acronyms"
                         android:id="@+id/longRangeAidToNavigation"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="12dp"
-                        android:textSize="@dimen/size_of_hints"
-                        android:textColor="@color/main"
-                        android:textColorHint="@color/main_hint"
-                        android:hint="@string/hint"
-                        android:inputType="textPersonName" />
+                        tools:ignore="LabelFor"/>
                 </TableRow>
             </TableLayout>
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*"
-                android:stretchColumns="*"
-                android:layout_marginBottom="12dp"
-                android:background="@color/background2"
-                app:layout_constraintTop_toBottomOf="@+id/TextView"
-                tools:layout_editor_absoluteX="8dp">
+                style="@style/TableLayout">
                 <TextView
-                    android:padding="10dp"
-                    android:textSize="@dimen/size_of_questions"
-                    android:layout_marginTop="6dp"
-                    android:textColor="@color/plain"
-                    android:text="@string/fourth_question"
-                    android:fontFamily="casual"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    style="@style/Questions"
+                    android:text="@string/fourth_question" />
 
 
                     <RadioGroup
-                        android:id="@+id/btnGroup"
-                        android:paddingLeft="10dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
+                        style="@style/TableRows"
+                        android:id="@+id/btnGroup" >
 
                         <RadioButton
+                            style="@style/Checkboxes"
                             android:id="@+id/radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textSize="@dimen/size_of_answers"
                             android:text="@string/frequency_1"
                             android:textColor="@color/main"
                              />
 
                         <RadioButton
+                            style="@style/Checkboxes"
                             android:id="@+id/radioButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/main"
-                            android:textSize="@dimen/size_of_answers"
-                            android:layout_weight="1"
                             android:text="@string/frequency_2"
+                            android:textColor="@color/main"
                              />
 
                         <RadioButton
+                            style="@style/Checkboxes"
                             android:id="@+id/radioButton3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/main"
-                            android:textSize="@dimen/size_of_answers"
-                            android:layout_weight="1"
                             android:text="@string/frequency_3"
+                            android:textColor="@color/main"
                              />
                     </RadioGroup>
 
-</TableLayout>
+            </TableLayout>
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*"
-                android:stretchColumns="*"
-                android:layout_marginBottom="12dp"
-                android:background="@color/background2"
-                app:layout_constraintTop_toBottomOf="@+id/TextView"
-                tools:layout_editor_absoluteX="8dp">
+                style="@style/TableLayout">
             <TextView
+                style="@style/Questions"
                 android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:padding="10dp"
-                android:text="@string/question5"
-                android:fontFamily="casual"
-                android:textColor="@color/plain"
-                android:textSize="@dimen/size_of_questions" />
-
-
+                android:text="@string/question5" />
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp">
+                    style="@style/TableRows">
 
                     <Spinner
-                        android:id="@+id/spinner_dialog1"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:spinnerMode="dialog" />
+                        style="@style/Spinners"
+                        android:id="@+id/spinner_dialog1" />
 
                     <TextView
-                        android:id="@+id/textView1_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textColor="@color/main"
-                        android:textSize="@dimen/size_of_answers"
-                        android:text="@string/duration" />
+                        style="@style/Answers"
+                        android:text="@string/duration"
+                        android:textColor="@color/main"/>
 
                     <EditText
+                        style="@style/Acronyms"
                         android:id="@+id/editText4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/main"
-                        android:textSize="@dimen/size_of_hints"
-                        android:textColorHint="@color/main_hint"
-                        android:layout_weight="1"
-                        android:inputType="text"
                         android:hint=""/>
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp">
+                    style="@style/TableRows">
 
                     <Spinner
-                        android:id="@+id/spinner_dialog2"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:spinnerMode="dialog" />
-
+                        style="@style/Spinners"
+                        android:id="@+id/spinner_dialog2" />
                     <TextView
-                        android:id="@+id/textView1_2"
-                        android:layout_width="wrap_content"
-                        android:textColor="@color/main"
-                        android:layout_gravity="center"
-                        android:textSize="@dimen/size_of_answers"
-                        android:layout_height="wrap_content"
-                        android:text="@string/duration" />
-
-                    <EditText
-                        android:id="@+id/editText5"
-                        android:layout_width="match_parent"
-                        android:textColor="@color/main"
-                        android:textSize="@dimen/size_of_hints"
-                        android:inputType="text"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        tools:ignore="LabelFor" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp">
-
-                    <Spinner
-                        android:id="@+id/spinner_dialog3"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:spinnerMode="dialog" />
-
-                    <TextView
-                        android:id="@+id/textView1_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/size_of_answers"
-                        android:layout_gravity="center"
-                        android:textColor="@color/main"
-                        android:text="@string/duration" />
-
-                    <EditText
-                        android:id="@+id/editText6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/main"
-                        android:textSize="@dimen/size_of_hints"
-                        android:inputType="text"
-                        android:layout_weight="1"
-                        tools:ignore="LabelFor" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp">
-
-                    <Spinner
-                        android:id="@+id/spinner_dialog4"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:spinnerMode="dialog" />
-
-                    <TextView
-                        android:id="@+id/textView1_4"
-                        android:layout_width="wrap_content"
-                        android:textColor="@color/main"
-                        android:textSize="@dimen/size_of_answers"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="@string/duration" />
-
-                    <EditText
-                        android:id="@+id/editText7"
-                        android:layout_width="match_parent"
-                        android:textSize="@dimen/size_of_answers"
-                        android:textColor="@color/main"
-                        android:layout_height="wrap_content"
-                        android:inputType="text"
-                        android:layout_weight="1"
-                        tools:ignore="LabelFor" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="6dp">
-
-                    <Spinner
-                        android:id="@+id/spinner_dialog5"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:spinnerMode="dialog" />
-
-                    <TextView
-                        android:id="@+id/textView1_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/size_of_answers"
-                        android:textColor="@color/main"
-                        android:layout_gravity="center"
-                        android:text="@string/duration" />
-
-                    <EditText
-                        android:id="@+id/editText8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/size_of_hints"
-                        android:textColor="@color/main"
-                        android:inputType="text"
-                        android:layout_weight="1"
-                        tools:ignore="LabelFor" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="12dp"
-                    android:layout_marginTop="6dp">
-
-                    <Spinner
-                        android:id="@+id/spinner_dialog6"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:spinnerMode="dialog" />
-
-                    <TextView
-                        android:id="@+id/textView1_6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="@dimen/size_of_answers"
+                        style="@style/Answers"
                         android:text="@string/duration"
                         android:textColor="@color/main" />
 
                     <EditText
+                        style="@style/Acronyms"
+                        android:id="@+id/editText5"
+                        android:hint=""/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRows">
+
+                    <Spinner
+                        style="@style/Spinners"
+                        android:id="@+id/spinner_dialog3" />
+                    <TextView
+                        style="@style/Answers"
+                        android:text="@string/duration"
+                        android:textColor="@color/main"/>
+
+                    <EditText
+                        style="@style/Acronyms"
+                        android:id="@+id/editText6"
+                        android:hint=""/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRows">
+
+                    <Spinner
+                        style="@style/Spinners"
+                        android:id="@+id/spinner_dialog4" />
+                    <TextView
+                        style="@style/Answers"
+                        android:text="@string/duration"
+                        android:textColor="@color/main" />
+
+                    <EditText
+                        style="@style/Acronyms"
+                        android:id="@+id/editText7"
+                        android:hint=""/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRows">
+
+                    <Spinner
+                        style="@style/Spinners"
+                        android:id="@+id/spinner_dialog5" />
+                    <TextView
+                        style="@style/Answers"
+                        android:text="@string/duration"
+                        android:textColor="@color/main" />
+
+                    <EditText
+                        style="@style/Acronyms"
+                        android:id="@+id/editText8"
+                        android:hint="" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRows">
+
+                    <Spinner
+                        style="@style/Spinners"
+                        android:id="@+id/spinner_dialog6" />
+                    <TextView
+                        style="@style/Answers"
+                        android:text="@string/duration"
+                        android:textColor="@color/main"/>
+
+                    <EditText
+                        style="@style/Acronyms"
                         android:id="@+id/editText9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/size_of_hints"
-                        android:layout_weight="1"
-                        android:textColor="@color/main"
-                        android:inputType="text"
-                        tools:ignore="LabelFor" />
+                        android:hint=""/>
                 </TableRow>
             </TableLayout>
 
 
                     <Button
+                        style="@style/AnswersWithBgr"
                         android:id="@+id/button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textColorHint="@color/plain"
-                        android:background="@color/plain2"
-                        android:textColor="@color/additions"
-                        android:textSize="@dimen/size_of_answers"
                         android:onClick="submit"
                         android:text="@string/submit" />
 
-
                     <TextView
+                        style="@style/Answers"
                         android:id="@+id/Ans"
-                        android:layout_width="match_parent"
-                        android:layout_marginTop="12dp"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:textSize="@dimen/size_of_answers"
-                        android:textColor="@color/main"
-                        android:layout_height="0dp"
-                        android:background="@color/background2"
-                        android:layout_weight="1"
                         android:text="@string/final_statement" />
         </LinearLayout>
 

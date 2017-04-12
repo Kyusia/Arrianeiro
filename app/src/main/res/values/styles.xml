@@ -7,5 +7,72 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name ="Answers" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">2dp</item>
+    <item name="android:layout_weight">0</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textColor">@color/additions</item>
+    <item name="android:textSize">@dimen/size_of_answers</item>
+    <item name="android:layout_gravity">center_horizontal</item></style>
+
+    <style name ="AnswersWithBgr" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:textColor">@color/additions</item>
+        <item name="android:background">@color/plain2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/size_of_answers</item>
+    </style>
+    <style name="Acronyms" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:textSize">@dimen/size_of_hints</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:textColorHint">@color/main_hint</item>
+        <item name="android:hint">@string/hint</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="Spinners" parent="Theme.AppCompat.DayNight.NoActionBar">
+       <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:spinnerMode">dialog</item>
+    </style>
+    <style name = "Checkboxes" parent= "Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/additions</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/size_of_answers</item>
+    </style>
+    <style name = "TableLayout" parent = "Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shrinkColumns">*</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:stretchColumns">*</item>
+        <item name="android:background">@color/background2</item>
+    </style>
+    <style name="TableRows" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+    <style name="Questions" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textColor">@color/plain</item>
+        <item name="android:textSize">@dimen/size_of_questions</item>
+    </style>
+
 
 </resources>
